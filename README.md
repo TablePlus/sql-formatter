@@ -2,7 +2,7 @@
 
 This is a TablePlus Plugin, install SQL Formatter you will have a menu `Format SQL` in main menu.
 
-![menu](https://github.com/TablePlus/OpenURL/blob/master/Resource/demo.gif "menu")
+![menu](https://github.com/TablePlus/sql-formatter/blob/master/Resource/demo.gif "menu")
 
 # Support
 
