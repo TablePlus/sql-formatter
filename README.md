@@ -6,7 +6,7 @@ This is a TablePlus Plugin, install SQL Formatter you will have a menu `Format S
 
 # Support
 
-TablePlus build 114 and above.
+TablePlus build 115 and above.
 
 # Install
 
