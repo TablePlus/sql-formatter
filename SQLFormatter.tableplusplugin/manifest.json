@@ -1,0 +1,17 @@
+{
+    "name": "SQL Formatter Plugin",
+    "identifier": "com.tinyapp.TablePlus.SQLFormatter",
+    "version": "1.0",
+    "detail": "This plugin helps you format the SQL statement",
+    "author": "TablePlus",
+    "authorEmail": "support@tableplus.io",
+    "scripts": [
+        {
+            "location": "main",
+            "type": "action",
+            "shortcut": "control+i",
+            "script": "format.js",
+            "name": "Format SQL"
+        }
+    ]
+}
