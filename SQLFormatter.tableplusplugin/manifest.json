@@ -4,7 +4,7 @@
     "version": "1.0",
     "detail": "This plugin helps you format the SQL statement",
     "author": "TablePlus",
-    "authorEmail": "support@tableplus.io",
+    "authorEmail": "nick@tableplus.com",
     "scripts": [
         {
             "location": "main",
