@@ -7,7 +7,6 @@
     "sql-formatter": "^15.4.6"
   },
   "devDependencies": {
-    "babel-loader": "^9.2.1",
     "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4"
   },
