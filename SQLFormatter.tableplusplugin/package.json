@@ -4,7 +4,6 @@
   "description": "This plugin helps fill your empty table with funny text and quote for testing purpose",
   "main": "main.js",
   "dependencies": {
-    "sql-formatter": "^15.4.6",
     "nearley": "^2.20.1"
   },
   "devDependencies": {

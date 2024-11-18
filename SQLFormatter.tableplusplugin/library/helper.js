@@ -3,12 +3,6 @@
 import { format as oldFormat } from "./../formatter/sqlFormatter";
 
 var formatSQL = function(string, language) {
-	try {
-        var formatterStatement = newFormat(string, {language: language});
-        return formatterStatement;
-    } catch {}
-
-    /** Fallback to default formatter */
     try {
         var formatterStatement = oldFormat(string, {language: language});
         return formatterStatement;
