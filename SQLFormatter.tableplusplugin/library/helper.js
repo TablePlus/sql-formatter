@@ -7,6 +7,7 @@ var formatSQL = function(context, string, language, tabWidth, useTabs, keywordCa
 	    var formatterStatement = format(string, {language: language, tabWidth: tabWidth, useTabs: useTabs, keywordCase: keywordCase, expressionWidth: 200});
         return formatterStatement;
     }  catch (error) {
+        context.fallBackOldJSFormat();
         return null;
     }
 }
