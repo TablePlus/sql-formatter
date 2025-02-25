@@ -2,9 +2,13 @@
 
 import { format } from "sql-formatter";
 
-var formatSQL = function(string, language) {
-	var formatterStatement = format(string, {language: language});
-    return formatterStatement;
+var formatSQL = function(context, string, language, tabWidth, useTabs, keywordCase) {
+    try {
+	    var formatterStatement = format(string, {language: language, tabWidth: tabWidth, useTabs: useTabs, keywordCase: keywordCase, expressionWidth: 200});
+        return formatterStatement;
+    }  catch (error) {
+        return null;
+    }
 }
 
 var languageFromDriver = function(driver) {
@@ -38,4 +42,3 @@ var languageFromDriver = function(driver) {
 }
 
 export { formatSQL, languageFromDriver };
-
