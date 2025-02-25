@@ -4,7 +4,7 @@ import { formatSQL } from './library/helper';
 
 var onRun = function(context) {
     // Get table in opening tab
-    var queryEditor = context.currentQueryEditor();
+    var queryEditor = context.preferredEditor();
     if (queryEditor == null) {
         context.alert('Error', 'No SQL Editor');
         return;
