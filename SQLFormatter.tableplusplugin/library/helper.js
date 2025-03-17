@@ -1,10 +1,26 @@
 'use strict';
 
-import { format } from "sql-formatter";
+import { format as oldFormat } from "sql-formatter";
+import { format as newFormat } from "./../formatter/sqlFormatter";
 
-var formatSQL = function(string, language) {
-	var formatterStatement = format(string, {language: language});
-    return formatterStatement;
+var formatSQL = function(context, string, language) {
+    var error = null;
+    try {
+        var formatterStatement = newFormat(string, {language: language});
+        return formatterStatement;
+    } catch (ex) {
+        error = ex.toString();
+    }
+    try {
+        var result = oldFormat(string);
+        return result;
+    } catch (ex) {
+        error = ex.toString();
+    }
+    if (error !== null) {
+        context.alert("Error", error);
+    }
+    return string;
 }
 
 var languageFromDriver = function(driver) {

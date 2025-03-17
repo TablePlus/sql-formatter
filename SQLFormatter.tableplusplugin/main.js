@@ -13,7 +13,7 @@ var onRun = function(context) {
     var language = languageFromDriver(driver);
     var range = queryEditor.currentSelectedRange();
     var statement = queryEditor.currentSelectedString();
-    var formattedStatement = formatSQL(statement, language);
+    var formattedStatement = formatSQL(context, statement, language);
     queryEditor.replaceStringInRange(formattedStatement, range);
 };
 
